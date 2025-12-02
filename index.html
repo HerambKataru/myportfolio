@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kataru Heramb</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Righteous&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-container">
+        <div class="cursor" id="cursor"></div>
+        <div class="cursor-follower" id="cursorFollower"></div>
+    </div>
+    <div id="ripple-container"></div>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-container">
+        <div class="perspective-container">
+            <!-- Floating Cloud Elements -->
+            <div class="cloud-layer cloud-1">
+                <svg viewBox="0 0 200 60">
+                    <ellipse cx="100" cy="30" rx="80" ry="20" fill="#e0e0e0"/>
+                    <ellipse cx="70" cy="25" rx="50" ry="15" fill="#f0f0f0"/>
+                    <ellipse cx="130" cy="25" rx="50" ry="15" fill="#f0f0f0"/>
+                </svg>
+            </div>
+            <div class="cloud-layer cloud-2">
+                <svg viewBox="0 0 200 60">
+                    <ellipse cx="100" cy="30" rx="80" ry="20" fill="#e0e0e0"/>
+                    <ellipse cx="70" cy="25" rx="50" ry="15" fill="#f0f0f0"/>
+                    <ellipse cx="130" cy="25" rx="50" ry="15" fill="#f0f0f0"/>
+                </svg>
+            </div>
+            <div class="cloud-layer cloud-3">
+                <svg viewBox="0 0 200 60">
+                    <ellipse cx="100" cy="30" rx="80" ry="20" fill="#e0e0e0"/>
+                    <ellipse cx="70" cy="25" rx="50" ry="15" fill="#f0f0f0"/>
+                    <ellipse cx="130" cy="25" rx="50" ry="15" fill="#f0f0f0"/>
+                </svg>
+            </div>
+            
+            <!-- Floating Elements -->
+            <div class="float-element float-1"></div>
+            <div class="float-element float-2"></div>
+            <div class="float-element float-3"></div>
+            
+            <!-- Loading Content -->
+            <div class="loading-content">
+                <div class="loading-title">
+                    <span class="char">H</span>
+                    <span class="char">E</span>
+                    <span class="char">R</span>
+                    <span class="char">A</span>
+                    <span class="char">M</span>
+                    <span class="char">B</span>
+                </div>
+                <p class="loading-subtitle">Crafting Digital Experiences</p>
+                <div class="loading-bar">
+                    <div class="loading-progress"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Heramb</span><span class="dot">.</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-label">Tech Enthusiast</p>
+                    <h1 class="hero-title" id="scrambleText">Kataru Heramb</h1>
+                    <p class="hero-subtitle">I craft elegant digital experiences at the intersection of code, design, and innovation. Let's build something extraordinary together.</p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-dark">View Projects ↓</a>
+                        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-container">
+                        <img src="my_img.png" alt="Heramb.k" class="hero-image">
+                        <div class="image-decoration"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-hint">
+                <p>SCROLL DOWN</p>
+                <div class="scroll-arrow">↓</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section - Apple Style -->
+    <section id="about" class="about-apple">
+        <div class="about-flow-container">
+            <div class="about-hero-text">
+                <p class="label-micro">WHO I AM</p>
+                <h2 class="display-large">Building tomorrow's<br>solutions today.</h2>
+                <p class="body-large">CS student at VIT Bhopal specializing in Cybersecurity. From mobile apps to blockchain systems, I'm passionate about solving complex problems with elegant code.</p>
+            </div>
+            
+            <div class="about-feature-row">
+                <div class="feature-item">
+                    <h3 class="feature-number">01</h3>
+                    <h4 class="feature-title">Student & Developer</h4>
+                    <p class="feature-desc">Mastering full-stack development while exploring the frontiers of cybersecurity and blockchain technology.</p>
+                </div>
+            </div>
+            
+            <div class="about-feature-row">
+                <div class="feature-item">
+                    <h3 class="feature-number">02</h3>
+                    <h4 class="feature-title">Leadership</h4>
+                    <p class="feature-desc">VP of Android Club leading 50+ members. Organized 10+ events with 500+ participants each. 170% footfall increase, 100% sponsorship growth.</p>
+                </div>
+            </div>
+            
+            <div class="about-feature-row">
+                <div class="feature-item">
+                    <h3 class="feature-number">03</h3>
+                    <h4 class="feature-title">Innovation</h4>
+                    <p class="feature-desc">Driven by the intersection of technology and human-centered design, creating solutions that make a difference.</p>
+                </div>
+            </div>
+            
+            <div class="stats-flow-grid">
+                <div class="stat-column">
+                    <p class="stat-big">20+</p>
+                    <p class="stat-caption">Projects Delivered</p>
+                </div>
+                <div class="stat-column">
+                    <p class="stat-big">5+</p>
+                    <p class="stat-caption">Technologies Mastered</p>
+                </div>
+                <div class="stat-column">
+                    <p class="stat-big">500+</p>
+                    <p class="stat-caption">Event Attendees</p>
+                </div>
+                <div class="stat-column">
+                    <p class="stat-big">2+</p>
+                    <p class="stat-caption">Years Experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section - Apple Style -->
+    <section id="skills" class="skills-apple">
+        <div class="skills-flow-container">
+            <div class="skills-hero-text">
+                <p class="label-micro">TECHNICAL EXPERTISE</p>
+                <h2 class="display-large">Powerful.<br>Professional.<br>Proven.</h2>
+            </div>
+            
+            <div class="skills-feature-block">
+                <h3 class="skill-category-title">Frontend Development</h3>
+                <p class="skill-list-text">HTML · CSS · JavaScript · React · GSAP</p>
+            </div>
+            
+            <div class="skills-feature-block">
+                <h3 class="skill-category-title">Backend Engineering</h3>
+                <p class="skill-list-text">Node.js · Express · Python · Java · SQL</p>
+            </div>
+            
+            <div class="skills-feature-block">
+                <h3 class="skill-category-title">Cloud & DevOps</h3>
+                <p class="skill-list-text">AWS · Docker · Lambda · S3 · RDS</p>
+            </div>
+            
+            <div class="skills-feature-block">
+                <h3 class="skill-category-title">Specialized Skills</h3>
+                <p class="skill-list-text">Git · Blockchain · AI/ML · UI/UX Design</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section - Apple Style -->
+    <section id="projects" class="projects-apple">
+        <div class="projects-flow-container">
+            <div class="projects-hero-text">
+                <p class="label-micro">FEATURED WORK</p>
+                <h2 class="display-large">Innovation<br>in action.</h2>
+            </div>
+            
+            <!-- Project 1 -->
+            <div class="project-showcase">
+                <div class="project-content">
+                    <p class="project-tag">CYBERSECURITY</p>
+                    <h3 class="project-title">KeySecure AI</h3>
+                    <p class="project-description">AI-driven analysis of keyboard vulnerabilities using electromagnetic emissions with 85% accuracy using LSTM & CNN architectures.</p>
+                    <p class="project-tech-line">Python · TensorFlow · LSTM · CNN</p>
+                </div>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="project-showcase">
+                <div class="project-content">
+                    <p class="project-tag">HEALTHCARE</p>
+                    <h3 class="project-title">HealVista</h3>
+                    <p class="project-description">Full-stack healthcare platform with AI chatbot for medicine recommendations, patient management, and secure medical records.</p>
+                    <p class="project-tech-line">React · Node.js · SQL Server · AI</p>
+                </div>
+            </div>
+            
+            <!-- Project 3 -->
+            <div class="project-showcase">
+                <div class="project-content">
+                    <p class="project-tag">BLOCKCHAIN</p>
+                    <h3 class="project-title">SupplyChain Pro</h3>
+                    <p class="project-description">Decentralized system with smart contracts for transparent transactions, predictive analytics, and 25% cost reduction.</p>
+                    <p class="project-tech-line">Solidity · Ethereum · Web3.js · React</p>
+                </div>
+            </div>
+            
+            <!-- Project 4 -->
+            <div class="project-showcase">
+                <div class="project-content">
+                    <p class="project-tag">CLOUD INFRASTRUCTURE</p>
+                    <h3 class="project-title">AWS Architecture</h3>
+                    <p class="project-description">Scalable AWS infrastructure with Lambda, RDS, S3 integration, Docker containerization, and 40% deployment speed improvement.</p>
+                    <p class="project-tech-line">AWS · Lambda · Docker · S3 · RDS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <p>I'm always open to new opportunities and interesting conversations. Let's create something incredible together.</p>
+                    <div class="contact-details">
+                        <a href="mailto:herambmurthy2005@gmail.com" class="detail-item">
+                            <div class="detail-icon">📧</div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>herambmurthy2005@gmail.com</p>
+                            </div>
+                        </a>
+                        <a href="https://github.com/HerambKataru" class="detail-item">
+                            <div class="detail-icon">💻</div>
+                            <div>
+                                <h4>GitHub</h4>
+                                <p>github.com/HerambKataru</p>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/heramb-sreedhar-kataru-309b841a9/" class="detail-item">
+                            <div class="detail-icon">🔗</div>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <p>linkedin.com/in/heramb-sreedhar-kataru</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/HerambKataru">GitHub</a>
+                        <a href="https://www.linkedin.com/in/heramb-sreedhar-kataru-309b841a9/">LinkedIn</a>
+                        <a href="mailto:herambmurthy2005@gmail.com">Email</a>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-dark">Send Message →</button>
+                        <div id="formStatus" class="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 Heramb Kataru. Crafted with <span class="heart">♥</span> and code.</p>
+    </footer>
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        emailjs.init("AtHfjp9xzP-oBnVrY");
+    </script>
+
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script src="script.js"></script>
+    
+    <!-- Hamburger Menu Toggle -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu on link click
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
