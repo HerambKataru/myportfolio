@@ -1,8 +1,4 @@
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
-
-/* ============================================================
-   CUSTOM CURSOR & RIPPLE EFFECT
-============================================================ */
 const cursor = document.getElementById('cursor');
 const cursorFollower = document.getElementById('cursorFollower');
 const rippleContainer = document.getElementById('ripple-container');
@@ -29,9 +25,7 @@ document.addEventListener('click', (e) => {
     setTimeout(() => ripple.remove(), 600);
 });
 
-/* ============================================================
-   TEXT SCRAMBLE CLASS
-============================================================ */
+
 class TextScramble {
     constructor(element) {
         this.element = element;
@@ -89,9 +83,7 @@ class TextScramble {
     }
 }
 
-/* ============================================================
-   LOADING SCREEN → ZOOM IN + SCRAMBLE TEXT
-============================================================ */
+
 window.addEventListener("load", () => {
     const loadingScreen = document.getElementById("loading-screen");
     const mainContent = document.querySelector('.hero-section');
@@ -240,6 +232,33 @@ function initPageAnimations() {
             }
         });
     });
+    // Animate More Projects Section
+gsap.from(".more-projects-text", {
+    scrollTrigger: {
+        trigger: ".more-projects-section",
+        start: "top 80%",
+        end: "bottom 20%",
+        toggleActions: "play none none reverse"
+    },
+    opacity: 0,
+    y: 30,
+    duration: 1,
+    ease: "power2.out"
+});
+
+gsap.from(".bouncing-dots .dot", {
+    scrollTrigger: {
+        trigger: ".more-projects-section",
+        start: "top 80%",
+        toggleActions: "play none none reverse"
+    },
+    opacity: 0,
+    scale: 0,
+    duration: 0.5,
+    stagger: 0.15,
+    ease: "back.out(1.7)"
+});
+
 
     // Contact Section
     gsap.from('.contact-wrapper', {
