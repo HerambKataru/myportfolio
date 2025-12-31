@@ -1,4 +1,4 @@
-/* ============ RESET & BASE ============ */
+
 * {
     margin: 0;
     padding: 0;
@@ -1064,5 +1064,74 @@ body {
 
     .stats-flow-grid {
         grid-template-columns: 1fr;
+    }
+}
+/* More Projects Coming Section */
+.more-projects-section {
+    padding: 80px 20px;
+    background: #fbfbfd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+}
+
+.more-projects-container {
+    text-align: center;
+}
+
+.more-projects-text {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #1d1d1f;
+    margin-bottom: 30px;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: -0.5px;
+}
+
+/* Bouncing Dots Animation */
+.bouncing-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.bouncing-dots .dot {
+    width: 16px;
+    height: 16px;
+    background: #1d1d1f;
+    border-radius: 50%;
+    animation: bouncing-loader 0.6s infinite alternate;
+}
+
+.bouncing-dots .dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.bouncing-dots .dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes bouncing-loader {
+    0% {
+        opacity: 0.1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(-20px);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .more-projects-text {
+        font-size: 1.8rem;
+    }
+    
+    .bouncing-dots .dot {
+        width: 12px;
+        height: 12px;
     }
 }
